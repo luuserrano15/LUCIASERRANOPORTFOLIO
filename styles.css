@@ -1,140 +1,152 @@
+
 body {
-  margin: 0;
   font-family: 'Afacad', sans-serif;
-  background-color: #F4F7FF;
-  color: #292929;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fcb7e7; /* Título principal rosa */
-}
-
-h2 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-header {
-  background-color: #000000;
-  color: white;
-  padding: 20px;
+h3 {
+  color: #ff69b4;
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
 }
 
 nav {
+  background: #111;
+  color: white;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+nav h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
-  padding-left: 0;
-  margin: 10px 0 0 0;
+  gap: 20px;
 }
 
-nav a {
-  text-decoration: none;
+nav ul li a {
   color: white;
+  text-decoration: none;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #fcb7e7;
-  text-decoration: underline;
+nav ul li a:hover {
+  color: #ff69b4;
 }
+
 
 .seccion {
-  padding: 50px 20px;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
+
+.seccion h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
 
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-}
-
-.galeria img {
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.galeria img:hover {
-  transform: scale(1.02);
+  gap: 30px;
 }
 
 .trabajo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
 
-.trabajo h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #fcb7e7; /* Títulos de trabajos en rosa */
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
+.trabajo img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.trabajo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .descripcion {
-  margin-top: 10px;
-  font-size: 15px;
+  font-size: 0.9rem;
   color: #555;
-  max-width: 90%;
 }
+
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  max-width: 600px;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 input, textarea {
-  padding: 10px;
+  padding: 0.7rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-family: 'Afacad', sans-serif;
-  font-size: 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s;
 }
 
 input:focus, textarea:focus {
+  border-color: #ff69b4;
   outline: none;
-  border-color: #fcb7e7;
-  background-color: #fff6fb;
 }
 
 button {
-  background-color: #fcb7e7;
+  background-color: #ff69b4;
+  color: white;
   border: none;
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #f1b5ee;
+  background-color: #ff479d;
 }
+
 
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #000000;
+  padding: 2rem;
+  background: #111;
   color: white;
-  font-size: 14px;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
