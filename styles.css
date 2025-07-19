@@ -147,3 +147,12 @@ footer {
   color: #555;
   max-width: 90%;
 }
+.trabajo h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fcb7e7; /* Rosa chicle */
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
