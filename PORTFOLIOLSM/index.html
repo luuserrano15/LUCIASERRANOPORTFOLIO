@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Lucía Serrano</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Afacad&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Lucía Serrano</h1>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#trabajos">Mis trabajos</a></li>
+        <li><a href="#contacto">Contáctame</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sobre-mi" class="seccion">
+    <h2>Sobre mí</h2>
+    <p>Aquí puedes añadir una pequeña biografía, tus intereses, estudios y lo que quieras contar de ti misma.</p>
+  </section>
+
+  <section id="trabajos" class="seccion">
+    <h2>Mis trabajos</h2>
+    <div class="galeria">
+      <img src="portada-libro.jpg" alt="Portada libro La Viuda Ching Pirata" />
+      <img src="acuarela-torero.jpg" alt="Acuarela torero" />
+      <img src="dibujo-calavera.png" alt="Dibujo calavera" />
+      <img src="portada-interview.jpg" alt="Portadas Interview" />
+      <img src="revista-rosalia.jpg" alt="Revista El País con Rosalía" />
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <h2>Contáctame</h2>
+    <form action="#" method="POST">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lucía Serrano Maciñeiras</p>
+  </footer>
+
+</body>
+</html>
